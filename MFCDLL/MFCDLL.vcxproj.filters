@@ -1,0 +1,2326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxacceleratorkey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxacceleratorkeyassignctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxaccessibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxadv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxanimationcontroller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxanimationhelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxautohidebar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxautohidebutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxautohidedocksite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxbasepane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxbaseribbonelement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxbasetabbedpane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxbasetabctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxbasetoolbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcaptionbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcaptionbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcaptionmenubutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcmdusagecount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcmn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcoll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcolorbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcolorbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcolordialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcolormenubutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcolorpickerctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcolorpopupmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcolorpropertysheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcommandmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcom_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcontextmenumanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcontrolbarimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcontrolbars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcontrolbarutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcontrolrenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxconv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxctrlcontainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcustomcolorspropertypage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcustomizebutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcustomizemenubutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxcview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdao.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdatarecovery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdb_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdd_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdesktopalertdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdesktopalertwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdhtml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdialogex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdialogimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdisp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdlgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdllx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdll_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdockablepane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdockablepaneadapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdockingmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdockingpanesrow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdocksite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdocob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdragframeimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdrawmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdropdownlistbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdropdowntoolbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxdtctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxeditbrowsectrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxfontcombobox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxframeimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxframewndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxfullscreenimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxglobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxglobalutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxheaderctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxhh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxhtml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afximageeditordialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afximagepaintarea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxinet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxkeyboardmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxkeymapdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxlinkctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxlistctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmaskededit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmdichildwndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmdiclientareawnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmdiframewndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmenubar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmenubutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmenuhash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmenuimages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmenutearoffmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmousemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmousepropertypage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmsg_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmultidoctemplateex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxmultipaneframewnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxocc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxodlgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxolecntrframewndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxoledb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxoledocipframewndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxoleipframewndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxoleserverdocex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxoutlookbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxoutlookbarpane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxoutlookbarpaneadapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxoutlookbarpanebutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxoutlookbartabctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpanecontainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpanecontainermanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpanedialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpanedivider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpaneframewnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxplex_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpopupmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpopupmenubar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpreviewviewex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpriv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpriv2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpropertygridctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpropertygridtooltipctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpropertypage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxpropertysheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxrebar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxrebarstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxrecentdocksiteinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxregpath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxrendertarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonbuttonsgroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribboncategory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribboncheckbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribboncollector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribboncolorbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribboncombobox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribboncommandslistbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonconstructor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribboncustomizedialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribboninfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribboninfoloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonkeyboardcustomizedialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonkeytip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonlabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonlinkctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonmainpanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonminitoolbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonpalettegallery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonpanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonpanelmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonprogressbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonquickaccesstoolbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonslider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonstatusbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonstatusbarpane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxribbonundobutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxrich.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxsettingsstore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxshelllistctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxshellmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxshelltreectrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxshowallbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxsmartdockingguide.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxsmartdockinghighlighterwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxsmartdockingmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxsock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxsound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxspinbuttonctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxsplitterwndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxstandardcolorspropertypage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxstatusbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxstat_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxstr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtabbedpane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtabctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtabview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtagmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtaskdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtaskspane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtaskspaneframewnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtempl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtls_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarbuttoncustomizedialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarbuttonslistbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarcomboboxbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbardatetimectrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbardropsource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbardroptarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbareditboxbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarfontcombobox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarimages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarmenubutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarmenubuttonsbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarnamedialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarscommandslistbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarscustomizedialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarskeyboardpropertypage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarslistcheckbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarslistpropertypage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarsmenupropertypage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarsoptionspropertypage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarspineditboxbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarstoolspropertypage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtoolbarsystemmenubutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtooltipctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxtooltipmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxusertool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxusertoolsmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxver_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxvisualmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxvisualmanageroffice2003.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxvisualmanageroffice2007.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxvisualmanagerofficexp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxvisualmanagervs2005.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxvisualmanagervs2008.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxvisualmanagerwindows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxvisualmanagerwindows7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxvslistbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxv_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxv_dll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxv_w32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxwin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxwinappex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxwindowsmanagerdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxwinforms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afxwinverapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlacc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlbuild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlchecked.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlcoll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlcom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlcomcli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\ATLComMem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\ATLComTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlconv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlcore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlcur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atldb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atldbcli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atldbgmem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atldbsch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atldef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlenc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlevent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlexcept.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlhandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlhandlerimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlhost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atliface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlmem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlpath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlplus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlpreviewctrlimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlsafe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlsecurity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlsimpcoll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlsimpstr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlsnap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlsocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlstdthunk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlstr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlsync.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlthunk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atltime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atltrace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atltransactionmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atltypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlwin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlwinverapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\atlxml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\cstringt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\ocdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\ocdbid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\olebind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\statreg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afximpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\daoimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dbimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dispimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\elements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\fixalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\occimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olebind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleimpl2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\sockimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winhand_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(VCToolsInstallDir)\atlmfc\verstamp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxabort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxacceleratorkey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxacceleratorkeyassignctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxanimationcontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxautohidebar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxautohidebutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxautohidedocksite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxbasepane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxbaseribbonelement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxbasetabbedpane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxbasetabctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxbasetoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcaptionbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcaptionbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcaptionmenubutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcmdusagecount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcolorbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcolorbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcolordialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcolormenubutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcolorpickerctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcolorpopupmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcolorpropertysheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcommandmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcontextmenumanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcontrolbarimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcontrolrenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcrit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxctrlcontainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxctrlcontainer2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcustomcolorspropertypage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcustomizebutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxcustomizemenubutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdatarecovery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdbcs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdesktopalertdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdesktopalertwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdialogex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdialogimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdockablepane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdockablepaneadapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdockingmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdockingpanesrow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdocksite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdragframeimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdrawmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdropdownlistbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxdropdowntoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxeditbrowsectrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxfontcombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxframeimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxframewndex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxfullscreenimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxglobals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxglobalutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxheaderctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afximageeditordialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afximagepaintarea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxinl1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxinl2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxinl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxinl4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxjumplist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxkeyboardmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxkeymapdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxlayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxlinkctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxlistctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmaskededit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmdichildwndex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmdiclientareawnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmdiframewndex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmenubar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmenubutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmenuhash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmenuimages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmenutearoffmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmousemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmousepropertypage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxmultipaneframewnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxolecntrframewndex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxoledocipframewndex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxoleipframewndex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxoleserverdocex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxoutlookbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxoutlookbarpane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxoutlookbarpaneadapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxoutlookbarpanebutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxoutlookbartabctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpanecontainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpanecontainermanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpanedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpanedivider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpaneframewnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpopupmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpopupmenubar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpreviewviewex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpropertygridctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpropertygridtooltipctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpropertypage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxpropertysheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxrebar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxrebarstate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxrecentdocksiteinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxregpath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxrendertarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonbuttonsgroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribboncategory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribboncheckbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribboncollector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribboncolorbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribboncombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribboncommandslistbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonconstructor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribboncustomizedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribboninfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribboninfo2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribboninfoloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonkeyboardcustomizedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonkeytip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonlabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonlinkctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonmainpanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonminitoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonpalettegallery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonpanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonpanelmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonprogressbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonquickaccesstoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonslider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonstatusbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonstatusbarpane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxribbonundobutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxrichpreviewctrlimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxsettingsstore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxshelllistctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxshellmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxshelltreectrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxshowallbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxsmartdockingguide.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxsmartdockinghighlighterwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxsmartdockingmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxsound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxspinbuttonctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxsplitterwndex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxstandardcolorspropertypage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxstate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxstatusbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtabbedpane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtabctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtabview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtagmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtaskdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtaskspane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtaskspaneframewnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarbuttoncustomizedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarbuttonslistbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarcomboboxbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbardatetimectrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbardropsource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbardroptarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbareditboxbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarfontcombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarimages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarmenubutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarmenubuttonsbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarnamedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarscommandslistbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarscustomizedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarskeyboardpropertypage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarslistcheckbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarslistpropertypage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarsmenupropertypage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarsoptionspropertypage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarspineditboxbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarstoolspropertypage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtoolbarsystemmenubutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtooltipctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtooltipmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxtrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxusertool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxusertoolsmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxvisualmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxvisualmanageroffice2003.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxvisualmanageroffice2007.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxvisualmanagerofficexp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxvisualmanagervs2005.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxvisualmanagervs2008.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxvisualmanagerwindows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxvisualmanagerwindows7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxvslistbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxwinappex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxwindowsmanagerdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxwinverapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\appcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\appdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\apphelp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\apphelpx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\appinit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\appmodul.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\appprnt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\appterm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\appui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\appui1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\appui2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\appui3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\arccore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\arcex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\arcobj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\arcstrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\array_b.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\array_d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\array_o.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\array_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\array_s.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\array_u.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\array_w.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\auxdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\barcool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\barcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\bardlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\bardock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\barstat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\bartool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ccdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\cmdtarg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlcache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlconn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctldata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlevent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlfont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlinl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlinplc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctllic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlmodul.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlnownd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlobj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlpbag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlpict.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlppg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlprop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlpropx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlpstg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlpstm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlquick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlrefl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlreg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctltrack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\ctlview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\daocore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\daodfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\daoview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dbcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dbflt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dblong.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dbrfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dbvar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dbview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dcmeta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dcprev.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgclr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgcomm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgdhtml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgfloat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgfnt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgfr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgprnt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgprntx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgprop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dlgtempl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dllinit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dllmodul.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\doccore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dockcont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dockstat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\docmapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\docmgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\docmulti.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\docsingl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\doctempl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dumpcont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dumpflt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dumpinit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dumpout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\dumpstak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\except.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\filecore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\filefind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\filelist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\filemem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\fileshrd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\filest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\filetxt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\filex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\fixalloc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\inet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\list_o.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\list_p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\list_s.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\map_pp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\map_pw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\map_so.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\map_sp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\map_ss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\map_wo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\map_wp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\mtcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\mtex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\nolib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\objcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\occcont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\occddx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\occddxf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\occdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\occevent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\occlock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\occmgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\occsite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleasmon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olebar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olecall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olecli1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olecli2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olecli3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olecnvrt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleconn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledisp1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledisp2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledlgs1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledlgs2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledlgs3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledobj1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledobj2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledoc1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledoc2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledoccl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledocip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledocob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledoctg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledocvw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledrop1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledrop2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleenum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleexp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olefact.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleinit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleipfrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olelink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olelock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olemisc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olemon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olemsgf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olepset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olereg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olestrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olesvr1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olesvr2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oletsvr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oletyplb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleui1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleui2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleunk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olevar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olevar1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleverb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\plex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\rawdllmainproxy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\sockcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\sockexp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\strcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\thrdcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\timecore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\tooltip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\trckrect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\validadd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\viewcmn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\viewcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\viewedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\viewform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\viewhtml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\viewoled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\viewprev.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\viewprnt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\viewrich.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\viewscrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winbtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\wincore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\wincore2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winctrl1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winctrl2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winctrl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winctrl4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winctrl5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winctrl6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winctrl7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winctrl8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winfrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winfrm2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winfrmx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\wingdi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\wingdix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winhand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winmdi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winmini.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winocc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winsplit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winstr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlpset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(VCToolsInstallDir)\atlmfc\include\ver_.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\mfcdll.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afx.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxcmn.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxcmn2.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxcmn3.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxcoll.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxctl.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxcview.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxdao.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxdb.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxdlgs.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxdtctl.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxext.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxhelp.hm">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxhtml.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxinet.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxmt.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxole.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxrich.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxsock.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwin1.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwin2.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwin3.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwin4.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwinforms.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="$(VCToolsInstallDir)\atlmfc\include\atliface.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="$(VCToolsInstallDir)\atlmfc\src\mfc\x64\inetcal_.s" />
+    <MASM Include="$(VCToolsInstallDir)\atlmfc\src\mfc\x64\olecall_.s" />
+  </ItemGroup>
+</Project>
