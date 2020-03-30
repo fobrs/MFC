@@ -3,7 +3,7 @@ In previous versions of Visual Studio the bundled MFC source files could be comp
 # Introduction
 With the lastest Visual C++ versions (since 2008) it is not possible anymore to compile the bundled MFC sources. The necessary files, ie makefiles like <b>atlmfc.mak</b> and a DEF file are not provided anymore
 
-In a LOB software project I needed a x86 MFC DLL without the DAO database classes. With statically linked MFC, I provided my own versions of the DAO classes (which internally use MySQL) by overriding the *dao*.obj files, but MFC object files cannot be overridden when using the DLL form of MFC. 
+In a LOB software project I needed a x86 MFC DLL without the DAO database classes. With statically linked MFC, I provided my own versions of the DAO classes (which internally use MySQL) by overriding the <b>dao*.obj</b> files, but MFC object files cannot be overridden when using the DLL form of MFC. 
 
 So I took the road to build my own MFC vcxproj files.
 
@@ -14,7 +14,7 @@ The first hurdle was the missing DEF file. The MFC DLL exports its symbols via a
 
 After some internet search I discovered the tool: <b>dumpexts.exe</b>.  I found the source code of it and modified it a little so it could create a DEF file for all the objs created by the compiler.
 
-The tool is run as a pre-link Build Event for the MFCDLL project. Because Visual Studio has no macro with a list of all obj files, a DOS command enumerates all obj files in the Intermediate directory before calling <b>umpexts.exe</b>. Be sure to first clean the MFCDLL project so that no old obj files are hiding in it.
+The tool is run as a pre-link Build Event for the MFCDLL project. Because Visual Studio has no macro with a list of all obj files, a DOS command enumerates all obj files in the Intermediate directory before calling <b>dumpexts.exe</b>. Be sure to first clean the MFCDLL project so that no old obj files are hiding in it.
 
 When building the DLL the first time, be also sure Link Time Code Generation (LTCG) is not used. The object files the compiler generates when using LTCG cannot be read by <b>dumpexts.exe</b>. Luckilly when we once have generated a DEF file it can be used in a future LTCG build. 
 
