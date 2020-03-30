@@ -1,6 +1,6 @@
 # Compile MFC sources with Visual Studio 2019
-Compile MFC sources with Visual Studio 2019
-Introduction
+In previous versions of Visual Studio the bundled MFC source files could be compiled into a static library or a DLL. But since Visual Studio 2008 the necessary files to build MFC are not supplied anymore. In this article I show you how you can compile the MFC sources with Visual Studio 2019.
+# Introduction
 With the lastest Visual C++ versions (since 2008) it is not possible anymore to compile the bundled MFC sources. The necessary files, ie makefiles like <b>atlmfc.mak</b> and a DEF file are not provided anymore
 
 In a LOB software project I needed a x86 MFC DLL without the DAO database classes. With statically linked MFC, I provided my own versions of the DAO classes (which internally use MySQL) by overriding the *dao*.obj files, but MFC object files cannot be overridden when using the DLL form of MFC. 
