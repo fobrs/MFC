@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="arm64">
+      <UniqueIdentifier>{7d9e16c4-5416-4693-8de6-93fec545e9d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(VCToolsInstallDir)\atlmfc\include\afx.h">
@@ -2313,6 +2316,9 @@
     <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwinforms.inl">
       <Filter>Header Files</Filter>
     </None>
+    <None Include="..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29333\atlmfc\src\mfc\arm64\olecall_.s">
+      <Filter>arm64</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="$(VCToolsInstallDir)\atlmfc\include\atliface.idl">
@@ -2322,5 +2328,10 @@
   <ItemGroup>
     <MASM Include="$(VCToolsInstallDir)\atlmfc\src\mfc\x64\inetcal_.s" />
     <MASM Include="$(VCToolsInstallDir)\atlmfc\src\mfc\x64\olecall_.s" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="olecall_.obj">
+      <Filter>arm64</Filter>
+    </Object>
   </ItemGroup>
 </Project>

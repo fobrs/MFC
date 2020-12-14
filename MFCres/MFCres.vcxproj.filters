@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\MFCDLL\src\mfc\mfcintl.rc">
+    <ResourceCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\mfcintl.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
