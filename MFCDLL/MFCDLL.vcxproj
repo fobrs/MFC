@@ -204,7 +204,7 @@ $(SolutionDir)$(Platform)\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(P
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalDependencies>UxTheme.lib;windowscodecs.lib;Htmlhelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(OutDir)\MFCDLL.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)\x64\$(Configuration)\MCDLL.def</ModuleDefinitionFile>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <ForceFileOutput>UndefinedSymbolOnly</ForceFileOutput>
     </Link>
@@ -302,7 +302,7 @@ $(SolutionDir)$(Platform)\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(P
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalDependencies>UxTheme.lib;windowscodecs.lib;Htmlhelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(OutDir)\MFCDLL.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)\x64\$(Configuration)\MFCDLL.def</ModuleDefinitionFile>
       <ForceFileOutput>UndefinedSymbolOnly</ForceFileOutput>
     </Link>
     <PreLinkEvent>

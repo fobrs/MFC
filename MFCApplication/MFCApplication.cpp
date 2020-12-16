@@ -12,6 +12,7 @@
 #include "MFCApplicationDoc.h"
 #include "MFCApplicationView.h"
 
+#include "DateDlg.h"
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -169,6 +170,8 @@ protected:
 // Implementation
 protected:
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedButton1();
 };
 
 CAboutDlg::CAboutDlg() noexcept : CDialogEx(IDD_ABOUTBOX)
@@ -181,6 +184,7 @@ void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 }
 
 BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
+	ON_BN_CLICKED(IDC_BUTTON1, &CAboutDlg::OnBnClickedButton1)
 END_MESSAGE_MAP()
 
 // App command to run the dialog
@@ -216,3 +220,14 @@ void CMFCApplicationApp::SaveCustomState()
 
 
 
+
+
+void CAboutDlg::OnBnClickedButton1()
+{
+	CString str;
+	//CEdit
+	CDateDlg dlg;
+	if (dlg.DoModal() == IDOK)
+	{
+	}
+}
