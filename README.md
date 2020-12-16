@@ -43,4 +43,11 @@ One last point, which I don't understand. I needed to supply the /ENTRY point to
 # ARM64
 The latest version has an Active X Control added (Circ) to test passing floats and doubles on ARM64. Open the Aboutbox and click DATE, then click in the circle. The circ.dll file has to be registered first in an admin console with <b>regsvr32 circ.dll</b>.
 
-For a successfull compilation for ARM64 the files <b>dispimpl_supporting.h</b> and <b>olecall_.obj</b> are added.
+For a successfull compilation for ARM64 the files <b>dispimpl_supporting.h</b> and <b>olecall_.obj</b> were added. Theader file is reconstructed and the obj file is extraced from the ARM64 nafxcw.lib file. Those files resolve the unknown symbols:
+```
+ UNSUPPORTEDPLAT_PARAMS (_ARM64_PARAMS)
+ UnsupportedplatParamsReset
+ UnsupportedplatParamsAddFloat
+ UnsupportedplatParamsAddDouble
+ _AfxDispatchCall
+ ```
