@@ -39,3 +39,6 @@ The MFCres project is a resource DLL which is a localization for German. Alltoug
 
 # Points of Interest
 One last point, which I don't understand. I needed to supply the /ENTRY point to all builds except the Release|Win32 build of the main application linker settings. It is set to <b>wWinMainCRTStartup</b> for UNICODE builds.
+
+The latest version has an Active X Contol added to test passing floats and doubles on ARM64. Open the Aboutbox and click DATA, then click in teh circle. The circ.dll file has to be registered in an admin console with <b>regsrv32 circ.dll</b>.
+
