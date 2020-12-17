@@ -101,12 +101,6 @@
     <ClCompile Include="DateDlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="msacal70.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="font.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CCIRCCTRL1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

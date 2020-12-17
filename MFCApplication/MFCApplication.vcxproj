@@ -319,12 +319,10 @@
     <ClCompile Include="ClassView.cpp" />
     <ClCompile Include="DateDlg.cpp" />
     <ClCompile Include="FileView.cpp" />
-    <ClCompile Include="font.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="MFCApplication.cpp" />
     <ClCompile Include="MFCApplicationDoc.cpp" />
     <ClCompile Include="MFCApplicationView.cpp" />
-    <ClCompile Include="msacal70.cpp" />
     <ClCompile Include="OutputWnd.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

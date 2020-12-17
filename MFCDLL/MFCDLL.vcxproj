@@ -1158,9 +1158,27 @@ $(SolutionDir)$(Platform)\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(P
     <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwin3.inl" />
     <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwin4.inl" />
     <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwinforms.inl" />
-    <None Include="..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29333\atlmfc\src\mfc\arm64\olecall_.s">
+    <CustomBuild Include="olecall_.s">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</DeploymentContent>
       <FileType>Document</FileType>
-    </None>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</DeploymentContent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">cl.exe /P %(Filename).s
+"$(VC_ExecutablePath_x86_ARM64)\armasm64.exe" -I "$(WindowsSDK_IncludePath)" %(Filename).i  %(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">armasm64</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">olecall_.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">cl.exe /P %(Filename).s
+"$(VC_ExecutablePath_x86_ARM64)\armasm64.exe" -I "$(WindowsSDK_IncludePath)" %(Filename).i  %(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">armasm64</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">olecall_.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</LinkObjects>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="$(VCToolsInstallDir)\atlmfc\include\atliface.idl" />
@@ -1183,12 +1201,6 @@ $(SolutionDir)$(Platform)\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(P
     <ProjectReference Include="..\dumpexts\dumpexts.vcxproj">
       <Project>{bbce167e-22c4-4793-94ac-da9111360a43}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Object Include="olecall_.obj">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </Object>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
