@@ -204,8 +204,9 @@ $(SolutionDir)$(Platform)\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(P
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalDependencies>UxTheme.lib;windowscodecs.lib;Htmlhelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SolutionDir)\x64\$(Configuration)\MCDLL.def</ModuleDefinitionFile>
-      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>$(SolutionDir)\x64\$(Configuration)\MFCDLL.def</ModuleDefinitionFile>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
       <ForceFileOutput>UndefinedSymbolOnly</ForceFileOutput>
     </Link>
     <PreLinkEvent>
@@ -1158,7 +1159,7 @@ $(SolutionDir)$(Platform)\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(P
     <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwin3.inl" />
     <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwin4.inl" />
     <None Include="$(VCToolsInstallDir)\atlmfc\include\afxwinforms.inl" />
-    <CustomBuild Include="olecall_.s">
+    <CustomBuild Include="$(VCToolsInstallDir)\atlmfc\src\mfc\arm64\olecall_.s">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</ExcludedFromBuild>
@@ -1168,16 +1169,16 @@ $(SolutionDir)$(Platform)\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(P
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</DeploymentContent>
       <FileType>Document</FileType>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</DeploymentContent>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">cl.exe /P %(Filename).s
-"$(VC_ExecutablePath_x86_ARM64)\armasm64.exe" -I "$(WindowsSDK_IncludePath)" %(Filename).i  %(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">cl.exe /P "%(Identity)" 
+"$(VC_ExecutablePath_x86_ARM64)\armasm64.exe" -I "$(WindowsSDK_IncludePath)" %(Filename).i $(Platform)\$(Configuration)\%(Filename).obj</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">armasm64</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">olecall_.obj</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">cl.exe /P %(Filename).s
-"$(VC_ExecutablePath_x86_ARM64)\armasm64.exe" -I "$(WindowsSDK_IncludePath)" %(Filename).i  %(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(IntDir)\%(Filename).obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</LinkObjects>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">cl.exe /P "%(Identity)" 
+"$(VC_ExecutablePath_x86_ARM64)\armasm64.exe" -I "$(WindowsSDK_IncludePath)" %(Filename).i $(Platform)\$(Configuration)\%(Filename).obj</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">armasm64</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">olecall_.obj</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</LinkObjects>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(IntDir)\olecall_.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

@@ -2334,6 +2334,6 @@
     </MASM>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="olecall_.s" />
+    <CustomBuild Include="$(VCToolsInstallDir)\atlmfc\src\mfc\arm64\olecall_.s" />
   </ItemGroup>
 </Project>
