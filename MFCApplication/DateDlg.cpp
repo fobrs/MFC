@@ -73,10 +73,6 @@ double CDateDlg::OnClickinCircctrl1(long x, long y, float a, double b)
 {
 	// TODO: Add your message handler code here
 	TRACE("%d %d %f %f", x, y, a, b);
-
-
-	b =  m_circle.AboutBox();
-
 	return b;
 }
 
@@ -84,4 +80,5 @@ double CDateDlg::OnClickinCircctrl1(long x, long y, float a, double b)
 void CDateDlg::OnClickoutCircctrl1()
 {
 	// TODO: Add your message handler code here
+	m_circle.AboutBox();
 }
