@@ -227,7 +227,7 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <CustomBuildStep>
-      <Message>Registering OLE control...</Message>
+      <Message>DO IT YOUR SELF! Registering OLE control...</Message>
       <Command>rem if not "%NOREGISTEROUTPUT%" == "1" regsvr32 /s /c "$(TargetPath)"
 
 echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
@@ -297,7 +297,7 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <CustomBuildStep>
-      <Message>DO OT YOUR SELF! Registering OLE control...</Message>
+      <Message>DO IT YOUR SELF! Registering OLE control...</Message>
       <Command>rem if not "%NOREGISTEROUTPUT%" == "1" regsvr32 /s /c "$(TargetPath)"
 
 echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"

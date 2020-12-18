@@ -255,12 +255,10 @@ void CCircCtrl::OnResetState()
 /////////////////////////////////////////////////////////////////////////////
 // CCircCtrl::AboutBox - Display an "About" box to the user
 
-double CCircCtrl::AboutBox()
+void CCircCtrl::AboutBox()
 {
 	CDialog dlgAbout(IDD_ABOUTBOX_CIRC);
 	dlgAbout.DoModal();
-
-	return 42.24;
 }
 
 

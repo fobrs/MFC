@@ -76,7 +76,7 @@ protected:
 	//}}AFX_DISPATCH
 	DECLARE_DISPATCH_MAP()
 
-	afx_msg double AboutBox();
+	afx_msg void AboutBox();
 
 	double FireEventRV(DISPID dispid, BYTE* pbParams, va_list argList);
 	double AFX_CDECL FireEventR(DISPID dispid, BYTE* pbParams, ...);
