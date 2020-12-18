@@ -48,4 +48,4 @@ For a successfull compilation for ARM64 the file <b>dispimpl_supporting.h</b> wa
  UnsupportedplatParamsAddFloat
  UnsupportedplatParamsAddDouble
  ```
-To test these functions an Active X Control is added (Circ) to test passing floats and doubles on ARM64. Open the Aboutbox and click 'Circle Active X control', then click outside the circle. Reg free COM is used to load the active X control when running the app. The circ.dll file has to be registered in an admin console with <b>regsvr32 circ.dll</b> before Visual Studio shows the control.
+To test these functions an Active X Control is added (Circ) to test passing floats and doubles on ARM64. Open the Aboutbox and click 'Circle Active X control', then click outside the circle. Reg free COM is used to load the active X control when running the app. The x86 version of circ.dll file has to be registered in an admin console with <b>regsvr32 circ.dll</b> before Visual Studio shows the control.
