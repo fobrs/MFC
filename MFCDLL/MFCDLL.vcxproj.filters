@@ -951,6 +951,9 @@
     <ClInclude Include="$(VCToolsInstallDir)\atlmfc\verstamp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="dispimpl_supporting.h">
+      <Filter>arm64</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxabort.cpp">
@@ -2334,6 +2337,8 @@
     </MASM>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="$(VCToolsInstallDir)\atlmfc\src\mfc\arm64\olecall_.s" />
+    <CustomBuild Include="$(VCToolsInstallDir)\atlmfc\src\mfc\arm64\olecall_.s">
+      <Filter>arm64</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>
