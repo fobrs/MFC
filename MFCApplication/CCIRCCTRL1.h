@@ -37,7 +37,18 @@ public:
 
 // Attributes
 public:
-
+	OLE_COLOR GetBackColor()
+	{
+		OLE_COLOR result;
+		GetProperty(DISPID_BACKCOLOR, VT_I4, (void*)&result);
+		return result;
+	}
+	double GetDouble()
+	{
+		double d;
+		GetProperty(5, VT_R8, (void*)&d);
+		return d;
+	}
 
 // Operations
 public:
@@ -46,25 +57,38 @@ public:
 // Functions
 //
 
-	double AboutBox()
+	void AboutBox()
+	{
+		InvokeHelper(0xFFFFFDD8, DISPATCH_METHOD, VT_EMPTY, nullptr, nullptr);
+	}
+	double CalcDouble(double a, double b, double c, double d)
 	{
 		double r;
-		InvokeHelper(0xFFFFFDD8, DISPATCH_METHOD, VT_R8, &r, nullptr);
+		static BYTE parms[] = VTS_R8 VTS_R8 VTS_R8 VTS_R8;
+		InvokeHelper(6, DISPATCH_METHOD, VT_R8, &r, parms, a, b, c, d);
+		return r;
+	}
+	float CalcFloat(float a, float b, float c, float d)
+	{
+		float r;
+		static BYTE parms[] = VTS_R4 VTS_R4 VTS_R4 VTS_R4;
+		InvokeHelper(7, DISPATCH_METHOD, VT_R4, &r, parms, a, b, c, d);
 		return r;
 	}
 
 // Properties
 //
 
+
 // _DCircEvents
 
 // Functions
 //
 
-	void ClickIn(long x, long y)
+	void ClickIn(long x, long y, float a, double b)
 	{
-		static BYTE parms[] = VTS_I4 VTS_I4 ;
-		InvokeHelper(0x1, DISPATCH_METHOD, VT_EMPTY, nullptr, parms, x, y);
+		static BYTE parms[] = VTS_I4 VTS_I4 VTS_R4 VTS_R8 ;
+		InvokeHelper(0x1, DISPATCH_METHOD, VT_EMPTY, nullptr, parms, x, y, a, b);
 	}
 	void ClickOut()
 	{

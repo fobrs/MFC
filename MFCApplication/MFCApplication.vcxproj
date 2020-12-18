@@ -105,22 +105,28 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>true</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>true</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <LinkIncremental>true</LinkIncremental>
     <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+    <EmbedManifest>true</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>true</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>true</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>true</EmbedManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -149,6 +155,9 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ShowProgress>false</ShowProgress>
     </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>circ.merge.manifest;</AdditionalManifestFiles>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -178,6 +187,13 @@
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
     </ResourceCompile>
+    <Manifest>
+      <TypeLibraryFile>
+      </TypeLibraryFile>
+      <ComponentFileName>
+      </ComponentFileName>
+      <AdditionalManifestFiles>circ.merge.manifest;</AdditionalManifestFiles>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
@@ -207,6 +223,9 @@
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
     </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>circ.merge.manifest;</AdditionalManifestFiles>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -236,6 +255,9 @@
       <PreprocessorDefinitions>NDEBUG;LANG=ENU;LANGID=0409;CP=1252;CPHEX=04E4;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>circ.merge.manifest;</AdditionalManifestFiles>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -265,6 +287,13 @@
       <PreprocessorDefinitions>NDEBUG;LANG=ENU;LANGID=0409;CP=1252;CPHEX=04E4;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <Manifest>
+      <TypeLibraryFile>
+      </TypeLibraryFile>
+      <AdditionalManifestFiles>circ.merge.manifest;</AdditionalManifestFiles>
+      <ComponentFileName>
+      </ComponentFileName>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
@@ -294,19 +323,20 @@
       <PreprocessorDefinitions>NDEBUG;LANG=ENU;LANGID=0409;CP=1252;CPHEX=04E4;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>circ.merge.manifest;</AdditionalManifestFiles>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CCIRCCTRL1.h" />
     <ClInclude Include="ClassView.h" />
     <ClInclude Include="DateDlg.h" />
     <ClInclude Include="FileView.h" />
-    <ClInclude Include="font.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="MFCApplication.h" />
     <ClInclude Include="MFCApplicationDoc.h" />
     <ClInclude Include="MFCApplicationView.h" />
-    <ClInclude Include="msacal70.h" />
     <ClInclude Include="OutputWnd.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PropertiesWnd.h" />
@@ -369,12 +399,18 @@
     <None Include="res\MFCApplication.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\circ\circ.vcxproj">
+      <Project>{1f8bf540-bd77-4680-b789-43bf11365f53}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\MFCDLL\MFCDLL.vcxproj">
       <Project>{34147591-1d9d-4982-8f7d-65f3a7cde8cd}</Project>
     </ProjectReference>
     <ProjectReference Include="..\MFCstatic\MFCstatic.vcxproj">
       <Project>{0b0248f4-287b-448b-bb2d-468027f09e3e}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="circ.merge.manifest" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -34,11 +34,6 @@ void CDateDlg::DoDataExchange(CDataExchange* pDX)
 	CDialog::DoDataExchange(pDX);
 	//{{AFX_DATA_MAP(CDateDlg)
 	//}}AFX_DATA_MAP
-	//  DDX_Control(pDX, IDC_CIRCCTRL1, m_circle);
-	//DDX_Control(pDX, IDC_CIRCCTRL1, m_circle);
-	//  DDX_Control(pDX, IDC_CIRCCTRL1, m_circle);
-	//  DDX_Control(pDX, IDC_CIRCCTRL1, m_circle);
-	//  DDX_Control(pDX, IDC_CIRCCTRL1, m_circle);
 	DDX_Control(pDX, IDC_CIRCCTRL1, m_circle);
 }
 
@@ -73,6 +68,7 @@ double CDateDlg::OnClickinCircctrl1(long x, long y, float a, double b)
 {
 	// TODO: Add your message handler code here
 	TRACE("%d %d %f %f", x, y, a, b);
+
 	return b;
 }
 
@@ -81,4 +77,34 @@ void CDateDlg::OnClickoutCircctrl1()
 {
 	// TODO: Add your message handler code here
 	m_circle.AboutBox();
+
+	auto f = m_circle.GetDouble();
+
+	double a = 1.0;
+	double b = 2.0;
+	double c = 3.0;
+	double d = 4.0;
+
+
+	auto r = m_circle.CalcDouble(a, b, c, d);
+
+	if (r != a * b * c * d)
+		AfxThrowInvalidArgException();
+
+	double af = 1.0f;
+	double bf = 2.0f;
+	double cf = 3.0f;
+	double df = 4.0f;
+
+	auto rf = m_circle.CalcFloat(af, bf, cf, df);
+
+	if (rf != af * bf * cf * df)
+		AfxThrowInvalidArgException();
+
+#if defined(_M_ARM64) 
+	if (r == a * b * c * d && rf == af * bf * cf * df)
+	{
+		AfxMessageBox(L"Double and float passed to and from COM component is ok!");
+	}
+#endif
 }

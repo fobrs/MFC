@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApplication", "MFCApplication\MFCApplication.vcxproj", "{D6BA1DFD-5885-4FDB-8ABF-FD21442DE0E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CD8F1503-7B21-49BC-A692-7C4B1EE80B75} = {CD8F1503-7B21-49BC-A692-7C4B1EE80B75}
+		{1F8BF540-BD77-4680-B789-43BF11365F53} = {1F8BF540-BD77-4680-B789-43BF11365F53}
+		{BBCE167E-22C4-4793-94AC-DA9111360A43} = {BBCE167E-22C4-4793-94AC-DA9111360A43}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCDLL", "MFCDLL\MFCDLL.vcxproj", "{34147591-1D9D-4982-8F7D-65F3A7CDE8CD}"
 	ProjectSection(ProjectDependencies) = postProject

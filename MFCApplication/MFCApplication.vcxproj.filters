@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Manifest">
+      <UniqueIdentifier>{94b8267e-e3de-4f72-9bd1-852f34825aef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -55,12 +58,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DateDlg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="msacal70.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="font.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CCIRCCTRL1.h">
@@ -191,5 +188,10 @@
     <None Include="res\MFCApplication.rc2">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="circ.merge.manifest">
+      <Filter>Manifest</Filter>
+    </Manifest>
   </ItemGroup>
 </Project>

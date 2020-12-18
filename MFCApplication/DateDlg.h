@@ -1,7 +1,9 @@
 // DateDlg.h : header file
 //
 #pragma once
+
 #include "CCIRCCTRL1.h"
+
 /////////////////////////////////////////////////////////////////////////////
 // CDateDlg dialog
 //{{AFX_INCLUDES()
@@ -41,7 +43,7 @@ protected:
 public:
 	double OnClickinCircctrl1(long x, long y, float a, double b);
 	void OnClickoutCircctrl1();
-	CCIRCCTRL1 m_circle;
+	CCIRCCTRL1  m_circle;
 };
 
 

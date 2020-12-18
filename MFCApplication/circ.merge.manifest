@@ -1,0 +1,6 @@
+<assembly  xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+ <file name="Circ.dll" hashalg="SHA1">
+    <comClass clsid="{9DBAFCCF-592F-101B-85CE-00608CEC297B}" tlbid="{9DBAFCD2-592F-101B-85CE-00608CEC297B}" description="Circ Control"></comClass>
+    <typelib tlbid="{9DBAFCD2-592F-101B-85CE-00608CEC297B}" version="1.0" helpdir=""></typelib>
+  </file>
+</assembly>
