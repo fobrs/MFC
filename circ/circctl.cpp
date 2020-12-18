@@ -363,8 +363,7 @@ void CCircCtrl::OnLButtonDown(UINT nFlags, CPoint point)
 		ReleaseDC(pdc);
 
 		// Fire the ClickIn event
-		double r = FireClickIn(point.x, point.y, 1.0f, 2.0);
-		TRACE("%f\n", r);
+		FireClickIn(point.x, point.y, 1.0f, 2.0);
 	}
 	else
 		// Fire the ClickOut event
@@ -516,37 +515,4 @@ void CCircCtrl::OnFillColorChanged()
 {
 	// Can be overridden by subclass
 	InvalidateControl();
-}
-
-
-double CCircCtrl::FireEventRV(DISPID dispid, BYTE* pbParams,	va_list argList)
-{
-	double r = 0.0;
-	COleDispatchDriver driver;
-
-	POSITION pos = m_xEventConnPt.GetStartPosition();
-	LPDISPATCH pDispatch;
-	while (pos != NULL)
-	{
-		pDispatch = (LPDISPATCH)m_xEventConnPt.GetNextConnection(pos);
-		if (pDispatch != NULL)
-		{
-			driver.AttachDispatch(pDispatch, FALSE);
-			TRY
-				driver.InvokeHelperV(dispid, DISPATCH_METHOD, VT_R8, &r,
-					pbParams, argList);
-			END_TRY
-				driver.DetachDispatch();
-		}
-	}
-	return r;
-}
-
-double AFX_CDECL CCircCtrl::FireEventR(DISPID dispid, BYTE* pbParams, ...)
-{
-	va_list argList;
-	va_start(argList, pbParams);
-	double r = FireEventRV(dispid, pbParams, argList);
-	va_end(argList);
-	return r;
 }

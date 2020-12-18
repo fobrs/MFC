@@ -78,13 +78,10 @@ protected:
 
 	afx_msg void AboutBox();
 
-	double FireEventRV(DISPID dispid, BYTE* pbParams, va_list argList);
-	double AFX_CDECL FireEventR(DISPID dispid, BYTE* pbParams, ...);
-
 // Event maps
 	//{{AFX_EVENT(CCircCtrl)
-	double FireClickIn(OLE_XPOS_PIXELS x, OLE_YPOS_PIXELS y, float a, double b)
-		{return FireEventR(eventidClickIn,EVENT_PARAM(VTS_XPOS_PIXELS  VTS_YPOS_PIXELS  VTS_R4  VTS_R8), x, y, a, b);}
+	void FireClickIn(OLE_XPOS_PIXELS x, OLE_YPOS_PIXELS y, float a, double b)
+		{FireEvent(eventidClickIn,EVENT_PARAM(VTS_XPOS_PIXELS  VTS_YPOS_PIXELS  VTS_R4  VTS_R8), x, y, a, b);}
 	void FireClickOut()
 		{FireEvent(eventidClickOut,EVENT_PARAM(VTS_NONE));}
 	//}}AFX_EVENT

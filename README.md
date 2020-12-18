@@ -41,9 +41,9 @@ The MFCres project is a resource DLL which is a localization for German. Alltoug
 One last point, which I don't understand. I needed to supply the /ENTRY point to all builds except the Release|Win32 build of the main application linker settings. It is set to <b>wWinMainCRTStartup</b> for UNICODE builds.
 
 # ARM64
-The latest version has an Active X Control added (Circ) to test passing floats and doubles on ARM64. Open the Aboutbox and click DATE, then click in the circle. The circ.dll file has to be registered first in an admin console with <b>regsvr32 circ.dll</b>.
+The latest version has an Active X Control added (Circ) to test passing floats and doubles on ARM64. Open the Aboutbox and click DATE, then click outside the circle. The circ.dll file has to be registered first in an admin console with <b>regsvr32 circ.dll</b>.
 
-For a successfull compilation for ARM64 the file <b>dispimpl_supporting.h</b> was added. The header file is reconstructed. armasm.exe is used to cerate <b>objcall_.obj</> Those files resolve the unknown symbols:
+For a successfull compilation for ARM64 the file <b>dispimpl_supporting.h</b> was reconstructed. <b>armasm.exe</b> is used to create <b>objcall_.obj</> Those files resolve the unknown symbols:
 ```
  UNSUPPORTEDPLAT_PARAMS (_ARM64_PARAMS)
  UnsupportedplatParamsReset
