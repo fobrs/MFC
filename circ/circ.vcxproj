@@ -89,43 +89,47 @@
     <IntDir>$(Configuration)\</IntDir>
     <OutputFile>$(OutDir)$(ProjectName).ocx</OutputFile>
     <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <OutputFile>$(OutDir)$(ProjectName).ocx</OutputFile>
     <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
     <OutputFile>$(OutDir)$(ProjectName).ocx</OutputFile>
     <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <OutputFile>$(OutDir)$(ProjectName).ocx</OutputFile>
     <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <OutputFile>$(OutDir)$(ProjectName).ocx</OutputFile>
     <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <OutputFile>$(OutDir)$(ProjectName).ocx</OutputFile>
     <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <CustomBuildStep>
-      <Message>Registering OLE control...</Message>
-      <Command>if not "%NOREGISTEROUTPUT%" == "1" regsvr32 /s /c "$(TargetPath)"
-
-echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
-
-</Command>
-      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
-    </CustomBuildStep>
+    <CustomBuildStep />
     <Midl>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -153,17 +157,15 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
       <IgnoreSpecificDefaultLibraries>mfc140ud.lib; mfcs140ud.lib;mfc140d.lib; mfcs140d.lib</IgnoreSpecificDefaultLibraries>
       <AdditionalDependencies>$(OutDir)mfcstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Manifest>
+      <TypeLibraryFile>$(ProjectDir)\Circ.tlb</TypeLibraryFile>
+      <ComponentFileName>$(OutDir)$(TargetName)$(TargetExt)</ComponentFileName>
+      <AssemblyIdentity>
+      </AssemblyIdentity>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <CustomBuildStep>
-      <Message>Registering OLE control...</Message>
-      <Command>if not "%NOREGISTEROUTPUT%" == "1" regsvr32 /s /c "$(TargetPath)"
-
-echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
-
-</Command>
-      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
-    </CustomBuildStep>
+    <CustomBuildStep />
     <Midl>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -194,17 +196,15 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
       <IgnoreSpecificDefaultLibraries>mfc140u.lib; mfcs140u.lib;mfc140.lib; mfcs140.lib</IgnoreSpecificDefaultLibraries>
       <AdditionalDependencies>$(OutDir)mfcstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Manifest>
+      <TypeLibraryFile>$(ProjectDir)\Circ.tlb</TypeLibraryFile>
+      <ComponentFileName>$(OutDir)$(TargetName)$(TargetExt)</ComponentFileName>
+      <AssemblyIdentity>
+      </AssemblyIdentity>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">
-    <CustomBuildStep>
-      <Message>Registering OLE control...</Message>
-      <Command>if not "%NOREGISTEROUTPUT%" == "1" regsvr32 /s /c "$(TargetPath)"
-
-echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
-
-</Command>
-      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
-    </CustomBuildStep>
+    <CustomBuildStep />
     <Midl>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -221,7 +221,6 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
     <ResourceCompile>
       <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
-      <ShowProgress>true</ShowProgress>
     </ResourceCompile>
     <Link>
       <ModuleDefinitionFile>.\circ.def</ModuleDefinitionFile>
@@ -231,17 +230,17 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
       <IgnoreSpecificDefaultLibraries>mfc140ud.lib; mfcs140ud.lib;mfc140d.lib; mfcs140d.lib</IgnoreSpecificDefaultLibraries>
       <AdditionalDependencies>$(OutDir)mfcstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Manifest>
+      <TypeLibraryFile>$(ProjectDir)\Circ.tlb</TypeLibraryFile>
+    </Manifest>
+    <Manifest>
+      <ComponentFileName>$(OutDir)$(TargetName)$(TargetExt)</ComponentFileName>
+      <AssemblyIdentity>
+      </AssemblyIdentity>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
-    <CustomBuildStep>
-      <Message>DO IT YOUR SELF! Registering OLE control...</Message>
-      <Command>rem if not "%NOREGISTEROUTPUT%" == "1" regsvr32 /s /c "$(TargetPath)"
-
-echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
-
-</Command>
-      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
-    </CustomBuildStep>
+    <CustomBuildStep />
     <Midl>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -264,17 +263,15 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
       <AdditionalDependencies>$(OutDir)mfcstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>mfc140ud.lib; mfcs140ud.lib;mfc140d.lib; mfcs140d.lib</IgnoreSpecificDefaultLibraries>
     </Link>
+    <Manifest>
+      <TypeLibraryFile>$(ProjectDir)\Circ.tlb</TypeLibraryFile>
+      <ComponentFileName>$(OutDir)$(TargetName)$(TargetExt)</ComponentFileName>
+      <AssemblyIdentity>
+      </AssemblyIdentity>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
-    <CustomBuildStep>
-      <Message>Registering OLE control...</Message>
-      <Command>if not "%NOREGISTEROUTPUT%" == "1" regsvr32 /s /c "$(TargetPath)"
-
-echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
-
-</Command>
-      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
-    </CustomBuildStep>
+    <CustomBuildStep />
     <Midl>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -303,17 +300,19 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
       <AdditionalDependencies>$(OutDir)mfcstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>mfc140u.lib; mfcs140u.lib;mfc140.lib; mfcs140.lib</IgnoreSpecificDefaultLibraries>
     </Link>
+    <Manifest>
+      <TypeLibraryFile>$(ProjectDir)\Circ.tlb</TypeLibraryFile>
+      <ComponentFileName>$(OutDir)$(TargetName)$(TargetExt)</ComponentFileName>
+      <AssemblyIdentity>
+      </AssemblyIdentity>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
-    <CustomBuildStep>
-      <Message>DO IT YOUR SELF! Registering OLE control...</Message>
-      <Command>rem if not "%NOREGISTEROUTPUT%" == "1" regsvr32 /s /c "$(TargetPath)"
-
-echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
-
-</Command>
-      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
-    </CustomBuildStep>
+    <CustomBuildStep />
     <Midl>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -340,6 +339,12 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
       <AdditionalDependencies>$(OutDir)mfcstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>mfc140u.lib; mfcs140u.lib;mfc140.lib; mfcs140.lib</IgnoreSpecificDefaultLibraries>
     </Link>
+    <Manifest>
+      <TypeLibraryFile>$(ProjectDir)\Circ.tlb</TypeLibraryFile>
+      <ComponentFileName>$(OutDir)$(TargetName)$(TargetExt)</ComponentFileName>
+      <AssemblyIdentity>
+      </AssemblyIdentity>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cathelp.cpp" />

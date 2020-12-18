@@ -47,12 +47,15 @@ BEGIN_DISPATCH_MAP(CCircCtrl, COleControl)
 	DISP_PROPERTY_NOTIFY(CCircCtrl, "FlashColor", m_flashColor, OnFlashColorChanged, VT_COLOR)
 	DISP_PROPERTY_EX(CCircCtrl, "CircleOffset", GetCircleOffset, SetCircleOffset, VT_I2)
 	DISP_PROPERTY_EX(CCircCtrl, "Note", GetNote, SetNote, VT_BSTR)
+	DISP_PROPERTY_EX(CCircCtrl, "Double", GetDouble, SetDouble, VT_R8)
 	DISP_STOCKPROP_BACKCOLOR()
 	DISP_STOCKPROP_CAPTION()
 	DISP_STOCKPROP_FONT()
 	DISP_STOCKPROP_FORECOLOR()
 	//}}AFX_DISPATCH_MAP
 	DISP_FUNCTION_ID(CCircCtrl, "AboutBox", DISPID_ABOUTBOX, AboutBox, VT_EMPTY, VTS_NONE)
+	DISP_FUNCTION_ID(CCircCtrl, "CalcDouble", 6, CalcDouble, VT_R8, VTS_R8 VTS_R8 VTS_R8 VTS_R8)
+	DISP_FUNCTION_ID(CCircCtrl, "CalcFloat", 7, CalcFloat, VT_R4, VTS_R4 VTS_R4 VTS_R4 VTS_R4)
 
 	DISP_PROPERTY_STOCK(CCircCtrl, "FillColor", DISPID_FILLCOLOR, CCircCtrl::GetFillColor, CCircCtrl::SetFillColor, VT_COLOR)
 
@@ -218,6 +221,8 @@ void CCircCtrl::DoPropExchange(CPropExchange* pPX)
 		PX_Long(pPX, _T("FlashColor"), (long &)m_flashColor, RGB(0xFF, 0x00, 0x00));
 		PX_Long(pPX, _T("FillColor"), (long&)m_clrFillColor, RGB(0xFF, 0x00, 0x00));
 		PX_String(pPX, _T("Note"), m_note, _T(""));
+
+		m_double = 42.24;
 	}
 	else if (pPX->IsLoading())
 	{
@@ -226,17 +231,20 @@ void CCircCtrl::DoPropExchange(CPropExchange* pPX)
 		short sDummy;
 		long lDummy;
 		CString strDummy;
+		double dummy;
 		PX_Bool(pPX, _T("CircleShape"), bDummy, FALSE);
 		PX_Short(pPX, _T("CircleOffset"), sDummy, 0);
 		PX_Long(pPX, _T("FlashColor"), lDummy, 0);
 		PX_Long(pPX, _T("FillColor"), lDummy, 0);
 		PX_String(pPX, _T("Note"), strDummy, _T(""));
+		PX_Double(pPX, _T("Double"), dummy, 0.0);
 
 		// Force property values to these defaults
 		m_circleShape = TRUE;
 		m_circleOffset = 0;
 		m_flashColor = RGB(0xFF, 0x00, 0x00);
 		m_note = _T("");
+		m_double = 42.24;
 	}
 }
 
@@ -261,6 +269,15 @@ void CCircCtrl::AboutBox()
 	dlgAbout.DoModal();
 }
 
+double CCircCtrl::CalcDouble(double a, double b, double c, double d)
+{
+	return a * b * c * d;
+}
+
+float CCircCtrl::CalcFloat(float a, float b, float c, float d)
+{
+	return a * b * c * d;
+}
 
 /////////////////////////////////////////////////////////////////////////////
 // CCircCtrl message handlers
@@ -448,11 +465,27 @@ BOOL CCircCtrl::OnMapPropertyToPage(DISPID dispid, LPCLSID lpclsid,
 	return COleControl::OnMapPropertyToPage(dispid, lpclsid, pbPageOptional);
 }
 
-
 BSTR CCircCtrl::GetNote()
 {
 	return m_note.AllocSysString();
 }
+
+double 	 CCircCtrl::GetDouble()
+{
+	return m_double;
+}
+
+void CCircCtrl::SetDouble(double d)
+{
+	if (m_double != d)
+	{
+		m_double = d;
+		SetModifiedFlag();
+		InvalidateControl();
+		BoundPropertyChanged(dispidDouble);
+	}
+}
+
 
 
 void CCircCtrl::SetNote(LPCTSTR lpszNewValue)

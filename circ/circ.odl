@@ -41,12 +41,16 @@ library CircLib
 			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
 			[id(4), bindable] BSTR Note;
 			[id(2)] OLE_COLOR FlashColor;
+			[id(5)] double Double;
+
 			//}}AFX_ODL_PROP
 
 		methods:
 			// NOTE - ClassWizard will maintain method information here.
 			//    Use extreme caution when editing this section.
 			//{{AFX_ODL_METHOD(CCircCtrl)
+			[id(6)] double CalcDouble(double a, double b, double c);
+			[id(7)] float CalcFloat(float a, float b, float c);
 			//}}AFX_ODL_METHOD
 
 			[id(DISPID_ABOUTBOX)] void AboutBox();

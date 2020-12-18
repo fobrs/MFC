@@ -28,6 +28,7 @@ public:
 	int     m_circleOffset;
 	BOOL    m_circleShape;
 	CString m_note;
+	double m_double;
 	//}}AFX_DATA
 
 // Implementation

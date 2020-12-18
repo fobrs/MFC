@@ -44,6 +44,7 @@ protected:
 	BOOL InCircle(CPoint& point);
 	void FlashColor(CDC* pdc);
 	CString m_note;
+	double m_double;
 
 	DECLARE_OLECREATE_EX(CCircCtrl)    // Class factory and guid
 	DECLARE_OLETYPELIB(CCircCtrl)      // GetTypeInfo
@@ -73,10 +74,16 @@ protected:
 	afx_msg void SetCircleOffset(short nNewValue);
 	afx_msg BSTR GetNote();
 	afx_msg void SetNote(LPCTSTR lpszNewValue);
+	afx_msg double GetDouble ();
+	afx_msg void SetDouble(double d);
+
 	//}}AFX_DISPATCH
 	DECLARE_DISPATCH_MAP()
 
 	afx_msg void AboutBox();
+	afx_msg double CalcDouble(double a, double b, double c, double d);
+	afx_msg float CalcFloat(float a, float b, float c, float d);
+
 
 // Event maps
 	//{{AFX_EVENT(CCircCtrl)
@@ -97,6 +104,7 @@ public:
 	dispidFlashColor = 2L,
 	eventidClickIn = 1L,
 	eventidClickOut = 2L,
+	dispidDouble = 5L,
 	//}}AFX_DISP_ID
 	};
 };

@@ -65,6 +65,7 @@ CCircPropPage::CCircPropPage() :
 	m_circleOffset = 0;
 	m_circleShape = FALSE;
 	m_note = _T("");
+	m_double = 42.24;
 	//}}AFX_DATA_INIT
 }
 
@@ -83,6 +84,7 @@ void CCircPropPage::DoDataExchange(CDataExchange* pDX)
 	DDX_Check(pDX, IDC_CIRCLESHAPE, m_circleShape);
 	DDP_Text(pDX, IDC_NOTE, m_note, _T("Note") );
 	DDX_Text(pDX, IDC_NOTE, m_note);
+	DDX_Text(pDX, IDC_DOUBLE, m_double);
 	//}}AFX_DATA_MAP
 	DDP_PostProcessing(pDX);
 }

@@ -13,13 +13,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// English (U.S.) resources
+// English (United States) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-#ifdef _WIN32
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 #pragma code_page(1252)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -61,12 +59,14 @@ END
 // remains consistent on all systems.
 IDI_ABOUTDLL            ICON                    "CIRC.ICO"
 
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // Bitmap
 //
 
 IDB_CIRC                BITMAP                  "CIRCCTL.BMP"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -80,23 +80,23 @@ FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,21,20
     LTEXT           "Circ Control, Version 1.0",IDC_STATIC,40,10,170,8
-    LTEXT           "© 1995 - 2008 Microsoft Corporation.  All rights reserved.",
-                    IDC_STATIC,40,25,123,21
+    LTEXT           "© 1995 - 2008 Microsoft Corporation.  All rights reserved.",IDC_STATIC,40,25,123,21
     DEFPUSHBUTTON   "OK",IDOK,195,9,32,14,WS_GROUP
 END
 
-IDD_PROPPAGE_CIRC DIALOG  0, 0, 250, 62
+IDD_PROPPAGE_CIRC DIALOGEX 0, 0, 250, 62
 STYLE DS_SETFONT | WS_CHILD
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     LTEXT           "&Caption:",IDC_STATIC,5,2,50,12
     EDITTEXT        IDC_CAPTION,60,2,90,12,ES_AUTOHSCROLL
     LTEXT           "Circle &Offset:",IDC_STATIC,5,17,50,12
     EDITTEXT        IDC_CIRCLEOFFSET,60,17,90,12,ES_AUTOHSCROLL
-    CONTROL         "Circle &Shape:",IDC_CIRCLESHAPE,"Button",
-                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,5,32,62,12
+    CONTROL         "Circle &Shape:",IDC_CIRCLESHAPE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,5,32,62,12
     LTEXT           "&Note:",IDC_STATIC,5,47,50,12
     EDITTEXT        IDC_NOTE,60,47,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DOUBLE,185,43,40,14,ES_AUTOHSCROLL
+    LTEXT           "double",IDC_STATIC,181,26,22,8
 END
 
 
@@ -106,12 +106,16 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX_CIRC, DIALOG
     BEGIN
         RIGHTMARGIN, 229
         BOTTOMMARGIN, 44
+    END
+
+    IDD_PROPPAGE_CIRC, DIALOG
+    BEGIN
     END
 END
 #endif    // APSTUDIO_INVOKED
@@ -119,21 +123,32 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_PROPPAGE_CIRC AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // String Table
 //
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_CIRC                "Circ Control"
     IDS_CIRC_PPG            "Circ Property Page"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_CIRC_PPG_CAPTION    "General"
 END
 
-#endif    // English (U.S.) resources
+#endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
