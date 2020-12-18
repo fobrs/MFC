@@ -224,10 +224,18 @@ void CMFCApplicationApp::SaveCustomState()
 
 void CAboutDlg::OnBnClickedButton1()
 {
-	CString str;
-	//CEdit
-	CDateDlg dlg;
-	if (dlg.DoModal() == IDOK)
-	{
+	try {
+		CString str;
+		//CEdit
+		CDateDlg dlg;
+		if (dlg.DoModal() == IDOK)
+		{
+		}
 	}
+
+	catch (...)
+	{
+		AfxMessageBox(L"Exception during loading of Active X Object!");
+	}
+
 }
