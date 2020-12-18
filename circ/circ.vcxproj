@@ -130,6 +130,7 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(ProjectName).tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -167,6 +168,7 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(ProjectName).tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -207,6 +209,7 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(ProjectName).tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -242,6 +245,7 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
     <Midl>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TypeLibraryName>$(ProjectName).tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -275,6 +279,7 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(ProjectName).tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -312,6 +317,7 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
     <Midl>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TypeLibraryName>$(ProjectName).tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
