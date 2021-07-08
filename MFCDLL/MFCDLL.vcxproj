@@ -1196,11 +1196,21 @@ $(SolutionDir)\x64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
     </MASM>
-    <MASM Include="$(VCToolsInstallDir)\atlmfc\src\mfc\x64\olecall_.s">
+    <CustomBuild Include="$(VCToolsInstallDir)\atlmfc\src\mfc\x64\olecall_.s">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
+      <GeneratePreprocessedSourceListing Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GeneratePreprocessedSourceListing>
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl.exe /EP "%(Identity)" &gt; $(IntDir)\%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\%(Filename).asm</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl.exe /EP "%(Identity)" &gt; %(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).asm</Outputs>
+    </CustomBuild>
+    <MASM Include="olecall_.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </MASM>
   </ItemGroup>
   <ItemGroup>
