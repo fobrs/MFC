@@ -954,7 +954,7 @@
     <ClInclude Include="dispimpl_supporting.h">
       <Filter>arm64</Filter>
     </ClInclude>
-    <ClInclude Include="arm64params.h">
+    <ClInclude Include="ARM64\arm64params.h">
       <Filter>arm64</Filter>
     </ClInclude>
   </ItemGroup>

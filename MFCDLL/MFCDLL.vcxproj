@@ -630,7 +630,7 @@ $(SolutionDir)\x64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform
     <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\stdafx.h" />
     <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winhand_.h" />
     <ClInclude Include="$(VCToolsInstallDir)\atlmfc\verstamp.h" />
-    <ClInclude Include="arm64params.h" />
+    <ClInclude Include="ARM64\arm64params.h" />
     <ClInclude Include="dispimpl_supporting.h" />
   </ItemGroup>
   <ItemGroup>
