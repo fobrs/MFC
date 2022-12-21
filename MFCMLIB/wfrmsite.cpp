@@ -228,6 +228,7 @@ struct CRegisterWinFormsFactory
 	}
 	~CRegisterWinFormsFactory()
 	{
+		AfxUnregisterSiteFactory(m_pFactory);
 		delete m_pFactory;
 	}
 };
@@ -238,6 +239,8 @@ extern "C" {  CRegisterWinFormsFactory g_registerWinFormsFactory; }
 #if defined(_M_IX86)
 #pragma comment(linker, "/INCLUDE:_g_registerWinFormsFactory")
 #elif defined(_M_X64)
+#pragma comment(linker, "/INCLUDE:g_registerWinFormsFactory")
+#elif defined(_M_ARM64)
 #pragma comment(linker, "/INCLUDE:g_registerWinFormsFactory")
 #else
 #pragma message("Unknown platform.  Make sure the linker includes g_registerWinFormsFactory")
