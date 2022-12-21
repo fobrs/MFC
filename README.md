@@ -1,5 +1,5 @@
-# Compile MFC sources with Visual Studio 2019
-In previous versions of Visual Studio the bundled MFC source files could be compiled into a static library or a DLL. But since Visual Studio 2008 the necessary files to build MFC are not supplied anymore. In this article I show you how you can compile the MFC sources with Visual Studio 2019. The latest changes support <b>ARM64</b> too.
+# Compile MFC sources with Visual Studio 2022
+In previous versions of Visual Studio the bundled MFC source files could be compiled into a static library or a DLL. But since Visual Studio 2008 the necessary files to build MFC are not supplied anymore. In this article I show you how you can compile the MFC sources with Visual Studio 2022. The latest changes support <b>ARM64</b> and <b>Managed Winforms controls</b>.
 # Introduction
 With the latest Visual C++ versions (since 2008) it is not possible anymore to compile the bundled MFC sources. The necessary files, ie makefiles like <b>atlmfc.mak</b> and a DEF file are not provided anymore
 
@@ -51,3 +51,8 @@ For a successfull compilation for ARM64 the file <b>dispimpl_supporting.h</b> wa
 To test these functions an Active X Control is added (Circ) to test passing floats and doubles on ARM64. Open the Aboutbox and click 'Circle Active X control', then click outside the circle. Reg free COM is used to load the active X control when running the app. on ARM64 a MessageBox is shown if the float and double tests passes. The x86 version of circ.dll file has to be registered in an admin console with <b>regsvr32 circ.dll</b> before Visual Studio shows the control.
 
 Before building for ARM64 please build first for x64 (Debug and Release). The x64 dumpexts.exe is used in the ARM64 build.
+
+# Winforms support
+The new MFCMLIB project is added as a reference to the MFCApplication. The CAboutBox class is put in its own cpp file which is compiled with <b>/clr</b>. A Winforms Button control is placed onto the Aboutbox.
+
+
