@@ -1,35 +1,4 @@
-
-
-
-typedef struct _ARM64_PARAMS
-{
-	unsigned short IntsUsed;
-	unsigned short DoublesUsed;
-	unsigned __int64 IntValues[8];
-	double DoubleValues[8];
-} ARM64_PARAMS, UNSUPPORTEDPLAT_PARAMS, * PARM64_PARAMS, * PUNSUPPORTEDPLAT_PARAMS;
-
-
-inline void UnsupportedplatParamsReset(UNSUPPORTEDPLAT_PARAMS * p)
-{
-	p->IntsUsed = 0;
-	p->DoublesUsed = 0;
-};
-
-inline BOOL UnsupportedplatParamsAddFloat(UNSUPPORTEDPLAT_PARAMS* p, FLOAT f)
-{
-	float * pf = (float*) &(p->DoubleValues[p->DoublesUsed]);
-	*pf = f;
-	p->DoublesUsed++;
-	return TRUE;
-};
-
-inline BOOL UnsupportedplatParamsAddDouble(UNSUPPORTEDPLAT_PARAMS* p, DOUBLE f)
-{
-	p->DoubleValues[p->DoublesUsed] = f;
-	p->DoublesUsed++;
-	return TRUE;
-};
-
-void _AfxParseCall(AFX_PMSG pfn, void* pStack, UINT nSizeArgs)
-{}
+#include "arm64/arm64params.h"
+#define UnsupportedplatParamsReset(p) Arm64ParamsReset(p)
+#define UnsupportedplatParamsAddDouble(p1, p2) Arm64ParamsAddDouble(p1, p2)
+#define UnsupportedplatParamsAddFloat(p1, p2) Arm64ParamsAddFloat(p1, p2)

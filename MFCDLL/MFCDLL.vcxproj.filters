@@ -954,6 +954,9 @@
     <ClInclude Include="dispimpl_supporting.h">
       <Filter>arm64</Filter>
     </ClInclude>
+    <ClInclude Include="arm64params.h">
+      <Filter>arm64</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\afxabort.cpp">
@@ -1979,9 +1982,6 @@
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledata.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledisp1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledisp2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -2238,6 +2238,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ctlpset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledisp1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oledisp1_arm64.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

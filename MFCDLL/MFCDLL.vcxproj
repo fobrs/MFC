@@ -37,39 +37,39 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -143,7 +143,7 @@
       <MapExports>
       </MapExports>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <ForceFileOutput>UndefinedSymbolOnly</ForceFileOutput>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
     </Link>
     <ResourceCompile>
       <PreprocessorDefinitions>LANG=deu;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -179,7 +179,7 @@ for %%f in (*.obj) do set LIST_OBJ=!LIST_OBJ! %%f
       <AdditionalDependencies>UxTheme.lib;windowscodecs.lib;Htmlhelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(OutDir)\MFCDLL.def</ModuleDefinitionFile>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <ForceFileOutput>UndefinedSymbolOnly</ForceFileOutput>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
     </Link>
     <PreLinkEvent>
       <Command>cd $(Platform)\$(ConfigurationName)
@@ -209,7 +209,7 @@ $(SolutionDir)$(Platform)\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(P
       <ModuleDefinitionFile>$(SolutionDir)\$(Platform)\$(Configuration)\MFCDLL.def</ModuleDefinitionFile>
       <IgnoreAllDefaultLibraries>
       </IgnoreAllDefaultLibraries>
-      <ForceFileOutput>UndefinedSymbolOnly</ForceFileOutput>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
     </Link>
     <PreLinkEvent>
       <Command>cd $(Platform)\$(ConfigurationName)
@@ -630,6 +630,7 @@ $(SolutionDir)\x64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform
     <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\stdafx.h" />
     <ClInclude Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winhand_.h" />
     <ClInclude Include="$(VCToolsInstallDir)\atlmfc\verstamp.h" />
+    <ClInclude Include="arm64params.h" />
     <ClInclude Include="dispimpl_supporting.h" />
   </ItemGroup>
   <ItemGroup>
@@ -1013,7 +1014,6 @@ $(SolutionDir)\x64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\olecnvrt.cpp" />
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oleconn.cpp" />
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledata.cpp" />
-    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledisp1.cpp" />
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledisp2.cpp" />
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledlgs1.cpp" />
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledlgs2.cpp" />
@@ -1127,6 +1127,16 @@ $(SolutionDir)\x64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winsplit.cpp" />
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winstr.cpp" />
     <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\winutil.cpp" />
+    <ClCompile Include="oledisp1_arm64.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(VCToolsInstallDir)\atlmfc\src\mfc\oledisp1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(VCToolsInstallDir)\atlmfc\include\ver_.rc">
@@ -1209,8 +1219,10 @@ $(SolutionDir)\x64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).asm</Outputs>
     </CustomBuild>
     <MASM Include="olecall_.asm">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
   </ItemGroup>
   <ItemGroup>
