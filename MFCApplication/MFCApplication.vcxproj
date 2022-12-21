@@ -32,6 +32,7 @@
     <Keyword>MFCProj</Keyword>
     <RootNamespace>MFCApplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ManagedAssembly>true</ManagedAssembly>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +141,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalDependencies>$(OutDir)mfcstatic.lib</AdditionalDependencies>
-      <IgnoreSpecificDefaultLibraries>mfc140ud.lib; mfcs140ud.lib;mfc140d.lib; mfcs140d.lib</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>mfcm140ud.lib;mfc140ud.lib; mfcs140ud.lib;mfc140d.lib; mfcs140d.lib</IgnoreSpecificDefaultLibraries>
       <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
       <ShowProgress>NotSet</ShowProgress>
       <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
@@ -174,6 +175,7 @@
       <IgnoreSpecificDefaultLibraries>mfc140ud.lib; mfcs140ud.lib;mfc140d.lib; mfcs140d.lib</IgnoreSpecificDefaultLibraries>
       <ShowProgress>NotSet</ShowProgress>
       <AdditionalDependencies>$(OutDir)mfcstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -207,10 +209,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
-      <IgnoreSpecificDefaultLibraries>mfcm140ud.lib;mfc140ud.lib</IgnoreSpecificDefaultLibraries>
-      <ShowProgress>NotSet</ShowProgress>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>mfcm140ud.lib;mfc140ud.lib; mfcs140ud.lib;mfc140d.lib; mfcs140d.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>$(OutDir)mfcstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -311,7 +311,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <IgnoreSpecificDefaultLibraries>mfc140u.lib; mfcs140u.lib;mfc140.lib; mfcs140.lib</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>mfcm140u.lib;mfc140u.lib; mfcs140u.lib;mfc140.lib; mfcs140.lib</IgnoreSpecificDefaultLibraries>
       <AdditionalDependencies>$(OutDir)mfcstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
     </Link>
@@ -330,6 +330,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CAboutBox.h" />
     <ClInclude Include="CCIRCCTRL1.h" />
     <ClInclude Include="ClassView.h" />
     <ClInclude Include="DateDlg.h" />
@@ -347,6 +348,38 @@
     <ClInclude Include="ViewTree.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CAboutBox.cpp">
+      <SupportJustMyCode Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</SupportJustMyCode>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Default</BasicRuntimeChecks>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</ExceptionHandling>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/clr %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">/clr %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">/clr %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/clr %(AdditionalOptions)</AdditionalOptions>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</ExceptionHandling>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</CompileAsManaged>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExceptionHandling>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</CompileAsManaged>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExceptionHandling>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ProgramDatabase</DebugInformationFormat>
+      <SupportJustMyCode Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</SupportJustMyCode>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExceptionHandling>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</CompileAsManaged>
+      <SupportJustMyCode Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</SupportJustMyCode>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExceptionHandling>
+    </ClCompile>
     <ClCompile Include="CCIRCCTRL1.cpp" />
     <ClCompile Include="ClassView.cpp" />
     <ClCompile Include="DateDlg.cpp" />
@@ -407,12 +440,20 @@
     <ProjectReference Include="..\MFCDLL\MFCDLL.vcxproj">
       <Project>{34147591-1d9d-4982-8f7d-65f3a7cde8cd}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\MFCMLIB\MFCMLIB.vcxproj">
+      <Project>{f11af5af-c3a5-4a34-9bbb-cf8ef5d488f4}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\MFCstatic\MFCstatic.vcxproj">
       <Project>{0b0248f4-287b-448b-bb2d-468027f09e3e}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="circ.merge.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

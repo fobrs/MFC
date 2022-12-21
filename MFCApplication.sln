@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCres", "MFCres\MFCres.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Circ", "circ\circ.vcxproj", "{1F8BF540-BD77-4680-B789-43BF11365F53}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCMLIB", "MFCMLIB\MFCMLIB.vcxproj", "{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -105,6 +107,18 @@ Global
 		{1F8BF540-BD77-4680-B789-43BF11365F53}.Release|x64.Build.0 = Release|x64
 		{1F8BF540-BD77-4680-B789-43BF11365F53}.Release|x86.ActiveCfg = Release|Win32
 		{1F8BF540-BD77-4680-B789-43BF11365F53}.Release|x86.Build.0 = Release|Win32
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Debug|ARM64.Build.0 = Debug|ARM64
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Debug|x64.ActiveCfg = Debug|x64
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Debug|x64.Build.0 = Debug|x64
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Debug|x86.ActiveCfg = Debug|Win32
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Debug|x86.Build.0 = Debug|Win32
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Release|ARM64.ActiveCfg = Release|ARM64
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Release|ARM64.Build.0 = Release|ARM64
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Release|x64.ActiveCfg = Release|x64
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Release|x64.Build.0 = Release|x64
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Release|x86.ActiveCfg = Release|Win32
+		{F11AF5AF-C3A5-4A34-9BBB-CF8EF5D488F4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

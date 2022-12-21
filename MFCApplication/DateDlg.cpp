@@ -96,9 +96,9 @@ void CDateDlg::OnClickoutCircctrl1()
 	double cf = 3.0f;
 	double df = 4.0f;
 
-	auto rf = m_circle.CalcFloat(af, bf, cf, df);
+	auto rf = m_circle.CalcFloat((float)af, (float)bf, (float)cf, (float)df);
 #ifndef _M_ARM64
-	if (rf != af * bf * cf * df)
+	if (rf != (float)af * (float)bf * (float)cf * (float)df)
 		AfxThrowInvalidArgException();
 #endif
 
@@ -109,7 +109,7 @@ void CDateDlg::OnClickoutCircctrl1()
 	}
 	else
 	{
-		AfxMessageBox(L"FATAL ERROR: RM64 Double and float passed to and from COM component is NOT ok!!!!");
+		AfxMessageBox(L"FATAL ERROR: Double and float passed to and from COM component is NOT ok!!!!");
 
 	}
 

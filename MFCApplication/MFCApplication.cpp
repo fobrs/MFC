@@ -11,7 +11,7 @@
 
 #include "MFCApplicationDoc.h"
 #include "MFCApplicationView.h"
-
+#include "CAboutBox.h"
 #include "DateDlg.h"
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -149,50 +149,13 @@ int CMFCApplicationApp::ExitInstance()
 	return CWinAppEx::ExitInstance();
 }
 
-// CMFCApplicationApp message handlers
-
-
-// CAboutDlg dialog used for App About
-
-class CAboutDlg : public CDialogEx
-{
-public:
-	CAboutDlg() noexcept;
-
-// Dialog Data
-#ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_ABOUTBOX };
-#endif
-
-protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
-
-// Implementation
-protected:
-	DECLARE_MESSAGE_MAP()
-public:
-	afx_msg void OnBnClickedButton1();
-};
-
-CAboutDlg::CAboutDlg() noexcept : CDialogEx(IDD_ABOUTBOX)
-{
-}
-
-void CAboutDlg::DoDataExchange(CDataExchange* pDX)
-{
-	CDialogEx::DoDataExchange(pDX);
-}
-
-BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
-	ON_BN_CLICKED(IDC_BUTTON1, &CAboutDlg::OnBnClickedButton1)
-END_MESSAGE_MAP()
 
 // App command to run the dialog
 void CMFCApplicationApp::OnAppAbout()
 {
-	CAboutDlg aboutDlg;
-	aboutDlg.DoModal();
+	ShowAboutBox();
 }
+
 
 // CMFCApplicationApp customization load/save methods
 
@@ -217,25 +180,3 @@ void CMFCApplicationApp::SaveCustomState()
 }
 
 // CMFCApplicationApp message handlers
-
-
-
-
-
-void CAboutDlg::OnBnClickedButton1()
-{
-	try {
-		CString str;
-		//CEdit
-		CDateDlg dlg;
-		if (dlg.DoModal() == IDOK)
-		{
-		}
-	}
-
-	catch (...)
-	{
-		AfxMessageBox(L"Exception during loading of Active X Object!");
-	}
-
-}

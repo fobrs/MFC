@@ -63,6 +63,9 @@
     <ClInclude Include="CCIRCCTRL1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CAboutBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainFrm.cpp">
@@ -99,6 +102,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CCIRCCTRL1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CAboutBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
