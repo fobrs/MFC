@@ -43,14 +43,10 @@
 
 
 #include <afxdisp.h>        // MFC Automation classes
-#if 0
-//#define _AFX_ENABLE_INLINES
-#include "afxwinforms.h"
-#else
+
 #define BUILD_MFCM
 #define _AFX_ENABLE_INLINES
 #include "afxwinforms.h"
-#endif
 
 #ifndef _AFX_NO_OLE_SUPPORT
 #include <afxdtctl.h>		// MFC support for Internet Explorer 4 Common Controls

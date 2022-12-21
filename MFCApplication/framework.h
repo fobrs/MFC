@@ -5,7 +5,9 @@
 #endif
 
 #ifdef _DLL
+#ifndef _AFXDLL
 #define _AFXDLL
+#endif
 #endif
 
 #include "targetver.h"
