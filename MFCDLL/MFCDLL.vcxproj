@@ -216,7 +216,14 @@ $(SolutionDir)$(Platform)\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(P
 setlocal EnableDelayedExpansion
 set LIST_OBJ=
 for %%f in (*.obj) do set LIST_OBJ=!LIST_OBJ! %%f 
-$(SolutionDir)\x64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%</Command>
+
+if "$(ProcessorArchitecture)"=="ARM64" (
+    $(SolutionDir)\ARM64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
+) ELSE (
+  echo "$(ConfigurationName)|x64 first"
+    $(SolutionDir)\x64\\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
+)
+</Command>
       <Message>Create MFCDLL.def file (switch off LTCG before running this)</Message>
     </PreLinkEvent>
   </ItemDefinitionGroup>
@@ -315,7 +322,14 @@ $(SolutionDir)$(Platform)\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(P
 setlocal EnableDelayedExpansion
 set LIST_OBJ=
 for %%f in (*.obj) do set LIST_OBJ=!LIST_OBJ! %%f 
-$(SolutionDir)\x64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%</Command>
+
+if "$(ProcessorArchitecture)"=="ARM64" (
+    $(SolutionDir)\ARM64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
+) ELSE (
+  echo "$(ConfigurationName)|x64 first"
+    $(SolutionDir)\x64\\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
+)
+</Command>
       <Message>Create MFCDLL.def file (switch off LTCG before running this)</Message>
     </PreLinkEvent>
   </ItemDefinitionGroup>
