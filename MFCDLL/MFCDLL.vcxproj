@@ -217,11 +217,11 @@ setlocal EnableDelayedExpansion
 set LIST_OBJ=
 for %%f in (*.obj) do set LIST_OBJ=!LIST_OBJ! %%f 
 
-if "$(ProcessorArchitecture)"=="ARM64" (
-    $(SolutionDir)\ARM64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
+if "$(PROCESSOR_ARCHITECTURE)"=="ARM64" (
+    $(SolutionDir)\ARM64\$(Configuration)\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
 ) ELSE (
-  echo "$(ConfigurationName)|x64 first"
-    $(SolutionDir)\x64\\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
+  echo "build $(ConfigurationName)|x64 first"
+    $(SolutionDir)\x64\$(Configuration)\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
 )
 </Command>
       <Message>Create MFCDLL.def file (switch off LTCG before running this)</Message>
@@ -323,11 +323,11 @@ setlocal EnableDelayedExpansion
 set LIST_OBJ=
 for %%f in (*.obj) do set LIST_OBJ=!LIST_OBJ! %%f 
 
-if "$(ProcessorArchitecture)"=="ARM64" (
-    $(SolutionDir)\ARM64\$(ConfigurationName)\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
+if "$(PROCESSOR_ARCHITECTURE)"=="ARM64" (
+    $(SolutionDir)\ARM64\$(Configuration)\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
 ) ELSE (
-  echo "$(ConfigurationName)|x64 first"
-    $(SolutionDir)\x64\\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
+  echo "build $(ConfigurationName)|x64 first"
+    $(SolutionDir)\x64\$(Configuration)\dumpexts.exe -o $(SolutionDir)$(Platform)\\$(ConfigurationName)\MFCDLL.def  MFCDLL.dll %LIST_OBJ%
 )
 </Command>
       <Message>Create MFCDLL.def file (switch off LTCG before running this)</Message>
@@ -1227,12 +1227,12 @@ if "$(ProcessorArchitecture)"=="ARM64" (
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
       <GeneratePreprocessedSourceListing Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GeneratePreprocessedSourceListing>
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl.exe /EP "%(Identity)" &gt; $(IntDir)\%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl.exe /EP "%(Identity)" &gt; $(IntDir)%(Filename).asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\%(Filename).asm</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl.exe /EP "%(Identity)" &gt; %(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl.exe /EP "%(Identity)" &gt; $(IntDir)%(Filename).asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).asm</Outputs>
     </CustomBuild>
-    <MASM Include="olecall_.asm">
+    <MASM Include="$(IntDir)\olecall_.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>

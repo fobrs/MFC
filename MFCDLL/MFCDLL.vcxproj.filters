@@ -2338,7 +2338,7 @@
     <MASM Include="$(VCToolsInstallDir)\atlmfc\src\mfc\x64\inetcal_.s">
       <Filter>x64</Filter>
     </MASM>
-    <MASM Include="olecall_.asm">
+    <MASM Include="$(IntDir)\olecall_.asm">
       <Filter>x64</Filter>
     </MASM>
   </ItemGroup>
